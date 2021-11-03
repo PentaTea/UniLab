@@ -36,18 +36,7 @@
     Watch,
   } from "vue-property-decorator";
   import NotFound from "./404.vue";
-  //组件名前缀,避免冲突
-  const MODULES_PREFIX = "Cell_MODULES_";
-  //引入modules文件夹下所有组件
-  const modulesFiles = require.context("./modules", true, /\.vue$/);
-  const modules = modulesFiles.keys().reduce((modules, modulePath) => {
-    const moduleName = modulePath.replace(/^\.\/(.*)\.\w+$/, "$1");
-    const value = modulesFiles(modulePath);
-    //拼接并编码前缀,解决vue读取组件名时报错
-    // @ts-ignore
-    modules[MODULES_PREFIX + moduleName] = value.default;
-    return modules;
-  }, {});
+  import modules from "./loader";
 
   @Component({
     name: "UniCell",
@@ -55,10 +44,9 @@
       NotFound,
     },
   })
-  export default class extends Vue {
+  export default class UniCell extends Vue {
     @Prop({ default: null }) use?: Record<string, string>;
-    // @ts-ignore
-    getModules = (name) => modules[MODULES_PREFIX + name];
+    getModules = (name) => modules["Cell_MODULES_" + name];
 
     @Prop({ default: "" }) input?: string;
 

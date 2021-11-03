@@ -74,3 +74,23 @@
       },
     }
     ```
+
+## vite 支持
+
+- 引入 lodash
+
+   ```bash
+   yarn add @originjs/vite-plugin-require-context --dev
+   ```
+
+- `vite.config.js`中添加
+
+   ```js
+   import ViteRequireContext from '@originjs/vite-plugin-require-context'
+
+  export default {
+    plugins: [
+        ViteRequireContext(),
+    ]
+  }
+   ```

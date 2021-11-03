@@ -12,7 +12,7 @@
       Select,
     },
   })
-  export default class extends Base {
+  export default class Food extends Base {
     roles = [
       {
         value: "选项1黄金糕",

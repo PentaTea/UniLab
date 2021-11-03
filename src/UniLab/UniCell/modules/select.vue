@@ -16,13 +16,13 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop } from 'vue-property-decorator'
-import Base from './base'
+  import { Component, Prop } from "vue-property-decorator";
+  import Base from "./base";
 
-@Component({})
-export default class extends Base {
-  @Prop() payload: Array<any>
-  mounted() {}
-}
+  @Component({})
+  export default class Select extends Base {
+    @Prop() payload: Array<any>;
+    mounted() {}
+  }
 </script>
 <style scoped lang="scss"></style>

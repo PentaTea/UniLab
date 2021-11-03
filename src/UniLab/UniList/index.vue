@@ -261,7 +261,7 @@
 <script lang="ts">
   import { Component, Vue } from "vue-property-decorator";
   import Options from "./custom";
-  import Parser from "./lib/form-gen-parser.min";
+  import Parser from "form-gen-parser";
   import UniCell from "../UniCell";
   import { pickBy, reduce, cloneDeep } from "lodash";
 
@@ -273,7 +273,7 @@
       Parser,
     },
   })
-  export default class extends Options {
+  export default class UniList extends Options {
     mounted() {
       const oldReload = this.reload;
       this.reload = () => {

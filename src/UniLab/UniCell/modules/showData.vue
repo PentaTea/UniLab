@@ -12,7 +12,7 @@
   import hanabi from "hanabi";
 
   @Component({})
-  export default class Input extends Base {
+  export default class Data extends Base {
     obj2html(data) {
       return hanabi("UniCell 测试窗口 " + JSON.stringify(data, null, "  "));
     }

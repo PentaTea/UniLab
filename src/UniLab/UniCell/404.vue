@@ -3,17 +3,17 @@
 </template>
 
 <script lang="ts">
-import { Component } from 'vue-property-decorator'
-import Base from './modules/base'
+  import { Component } from "vue-property-decorator";
+  import Base from "./modules/base";
 
-@Component({})
-export default class extends Base {
-  mounted() {}
-}
+  @Component({})
+  export default class Cell404 extends Base {
+    mounted() {}
+  }
 </script>
 <style scoped lang="scss">
-span {
-  padding: 10px 20px;
-  background: #eee;
-}
+  span {
+    padding: 10px 20px;
+    background: #eee;
+  }
 </style>
