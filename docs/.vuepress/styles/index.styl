@@ -1,0 +1,40 @@
+@import '~prism-theme-one-light-dark/prism-onelight.css';
+
+.theme-default-content pre code,
+.theme-default-content pre[class*="language-"] code
+    color #476582
+
+.demo-block .meta
+    background-color #fff !important
+
+.demo-content
+    padding 0 !important
+    height 400px
+    > div
+        height 100%
+.demo-block
+    table
+        margin 0
+        th, td
+            border none
+        tr:nth-child(2n)
+            background #fff
+
+blockquote
+    color #333
+
+div[class*="language-"].line-numbers-mode .line-numbers-wrapper
+    color #9d9d9f
+
+div[class*="language-"].line-numbers-mode::after
+    border-right none
+
+div[class*="language-"].line-numbers-mode .highlight-lines .highlighted:before
+    background #fafafa
+    border-left lighten($accentColor,10) solid 3px
+
+div[class*="language-"] .highlight-lines .highlighted
+    background #f5f5f5
+
+[class^="ri-"]::before, [class*=" ri-"]::before
+    vertical-align middle

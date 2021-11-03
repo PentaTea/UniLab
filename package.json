@@ -1,0 +1,32 @@
+{
+  "name": "xuxing-doc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "@types/webpack-env": "^1.16.3",
+    "sass": "^1.43.2",
+    "sass-loader": "10",
+    "typescript": "^4.4.4",
+    "vuepress": "^1.8.2",
+    "vuepress-plugin-autobar": "github:boboidream/vuepress-bar",
+    "vuepress-plugin-demo-container": "PentaTea/vuepress-plugin-demo-container",
+    "vuepress-plugin-typescript": "^0.3.1"
+  },
+  "dependencies": {
+    "async-validator": "1.11.5",
+    "element-ui": "^2.15.6",
+    "hanabi": "^0.4.0",
+    "lodash": "^4.17.21",
+    "prism-theme-one-light-dark": "^1.0.4",
+    "remixicon": "^2.5.0",
+    "stringify-object": "^4.0.0",
+    "vue-class-component": "^7.2.6",
+    "vue-property-decorator": "^9.1.2",
+    "vuepress-plugin-auto-sidebar": "^2.3.2"
+  }
+}

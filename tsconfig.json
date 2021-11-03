@@ -1,0 +1,46 @@
+{
+    "compilerOptions": {
+        "target": "es2015",
+        "module": "esnext",
+        "strict": false,
+        "jsx": "preserve",
+        "emitDecoratorMetadata": true,
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "allowUmdGlobalAccess": true,
+        "experimentalDecorators": true,
+        "strictPropertyInitialization": false,
+        "strictNullChecks": false,
+        "strictBindCallApply": false,
+        "preserveConstEnums": true,
+        "resolveJsonModule": true,
+        "isolatedModules": false,
+        "noUnusedLocals": false,
+        "allowJs": true,
+        "noImplicitAny": false,
+        "sourceMap": true,
+        "pretty": false,
+        "baseUrl": ".",
+        "types": [
+            "node",
+            "webpack-env",
+            "vue/types",
+        ],
+        "lib": [
+            "esnext",
+            "dom",
+            "dom.iterable",
+            "scripthost"
+        ],
+        "outDir": "./dist/"
+    },
+    "include": [
+        "**/*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "unpackage",
+        "dist",
+    ],
+}
